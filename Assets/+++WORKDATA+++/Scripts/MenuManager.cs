@@ -14,6 +14,11 @@ public void  StartGame()
   MainMenuPanel.SetActive(false);
   cameraSwitch.StartTimer();
 }
+
+public void ExitGame()
+{
+  Application.Quit();
+}
   
 public void LoseGame()
 {
