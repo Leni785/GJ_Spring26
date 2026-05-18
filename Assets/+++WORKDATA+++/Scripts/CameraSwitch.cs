@@ -13,7 +13,7 @@ public class CameraSwitch : MonoBehaviour
     [SerializeField] int TimeCounter = 11;
     [SerializeField] TextMeshProUGUI textTimer;
     
-   public void StartTimer()
+   public void Start()
     {
        StartCoroutine(Timer());
     }

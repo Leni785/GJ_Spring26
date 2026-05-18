@@ -1,24 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-  [SerializeField] CameraSwitch  cameraSwitch;
-  [SerializeField] GameObject MainMenuPanel;
-  [SerializeField] GameObject CreditsPanel;
+  [SerializeField] CameraSwitch cameraSwitch;
   
   [SerializeField] GameObject WinPanel;
   [SerializeField] GameObject LosePanel;
   
-public void  StartGame()
-{
-  MainMenuPanel.SetActive(false);
-  cameraSwitch.StartTimer();
-}
-
-public void ExitGame()
-{
-  Application.Quit();
-}
   
 public void LoseGame()
 {
@@ -31,19 +20,7 @@ public void WinGame()
 
 public void Home()
 {
-  MainMenuPanel.SetActive(true);
+  SceneManager.LoadScene("MainMenuScene");
 }
-
- public void Credits()
-  {
-    if (CreditsPanel.activeSelf)
-    {
-      CreditsPanel.SetActive(false);
-    }
-    else
-    {
-      CreditsPanel.SetActive(true);
-    }
-  }
 }
 
