@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Movable
+  - Fence
   layers:
   - Default
   - TransparentFX
